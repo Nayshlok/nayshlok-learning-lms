@@ -8,10 +8,14 @@ const MainWrapper = styled.div`
   flex-direction: column;
 `;
 
+const StyledLink = styled.a`
+  width: auto;
+`;
+
 function Home({ navList }){
   const navElements = navList.map(nav => {
     return (
-      <a key={nav.linkName} href={nav.destination}><h2>{nav.linkName}</h2></a>
+      <StyledLink key={nav.linkName} href={nav.destination}><h2>{nav.linkName}</h2></StyledLink>
     )
   });
   return(
