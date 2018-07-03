@@ -4,6 +4,7 @@ import Sidebar from './Sidebar';
 
 const ClassContainer = styled.div`
   display: flex;
+  height: 100%;
 `;
 
 const ClassMain = styled.div`
